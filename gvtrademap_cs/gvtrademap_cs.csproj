@@ -380,6 +380,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>"c:\Program Files (x86)\Microsoft\ILMerge\ILMerge.exe" /out:gvtrademap_cs.exe $(TargetFileName) utility.dll directx.dll gvo_base.dll net.dll gvo_net_base.dll PanelManager.dll</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
