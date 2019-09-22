@@ -1,6 +1,6 @@
 ﻿/*-------------------------------------------------------------------------
 
- TCPクライアントベース
+ TCP클라이언트ベース
  通信プロトコル実装용ベース
 
 ---------------------------------------------------------------------------*/
@@ -52,7 +52,7 @@ namespace net_base
 		public client_state state		{	get{	return m_state;		}}
 	
 		/*-------------------------------------------------------------------------
-		 クライアント용
+		 클라이언트용
 		---------------------------------------------------------------------------*/
 		public tcp_client_protocol_base(string protocol_name, int version)
 			: base()
@@ -79,7 +79,7 @@ namespace net_base
 		{
 			m_protocol_name		= protocol_name;		// プロトコル명
 			m_version			= version;				// プロトコル버전
-			m_state				= client_state.init;	// 初期化중
+			m_state				= client_state.init;	// 초기화중
 	
 			// 데이터受信時のハンドラ
 			base.ReceivedData	+= new ReceivedDataEventHandler(received_handler);
@@ -97,7 +97,7 @@ namespace net_base
 			}
 			if(m_state != client_state.ready){
 				// 準備が완료していない
-				throw new Exception("버전チェックが완료していません");
+				throw new Exception("버전체크が완료していません");
 			}
 #if DEBUG
 			if(command == VERSION_COMMAND){

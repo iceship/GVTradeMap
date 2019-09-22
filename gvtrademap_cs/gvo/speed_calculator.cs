@@ -203,7 +203,7 @@ namespace gvtrademap_cs
 			ajust_list_size(m_angle_list);
 	
 			// 
-			m_interval	= 0;	// 업데이트간격初期化
+			m_interval	= 0;	// 업데이트간격초기화
 			m_old_pos	= pos;	// 위치업데이트
 
 			// 속도を계산する

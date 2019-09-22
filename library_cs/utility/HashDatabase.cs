@@ -85,7 +85,7 @@ namespace Utility
 		/// <summary>
 		/// 삭제. 
 		/// 지정された키の要素を全て삭제する. 
-		/// O(1)に近い速度で実行できる. 
+		/// O(1)に近い速度で실행できる. 
 		/// </summary>
 		/// <param name="key">키</param>
 		public void Remove(TKey key)

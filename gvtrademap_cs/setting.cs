@@ -361,7 +361,7 @@ namespace gvtrademap_cs
 		public SSFormat ss_format			{	get{	return m_ss_format;						}
 												set{	m_ss_format	= value;					}}
 
-		// 외부からの항로공유유효かどうかのチェック용
+		// 외부からの항로공유유효かどうかの체크용
 		public bool enable_share_routes{
 			get{
 				if(!connect_network)			return false;		// インターネットに연결しない
@@ -723,7 +723,7 @@ namespace gvtrademap_cs
 			s.CancelAllRequests();
 			return s;
 		}
-		// 지도と도시명合成チェック付き
+		// 지도と도시명合成체크付き
 		public void Clone(GlobalSettings s)
 		{
 			bool	req		= false;

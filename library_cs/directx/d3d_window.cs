@@ -26,14 +26,14 @@ namespace directx {
 		public enum hit_check {
 			title,			  // フレームの상部
 			title_button,	   // タイトル내のボタン
-			client,			 // クライアント領域
+			client,			 // 클라이언트領域
 			inside,			 // 상記以외の윈도우내
 			outside			 // 윈도우외
 		};
 
 		/*-------------------------------------------------------------------------
 		 윈도우
-		 継承してクライアント領域を그리기すること
+		 継承して클라이언트領域を그리기すること
 		---------------------------------------------------------------------------*/
 		public class window {
 			private const int SMALL_HEADER_WIDTH = 48;
@@ -52,11 +52,11 @@ namespace directx {
 
 			private Vector2 m_pos;					  // 윈도우위치
 			private Vector2 m_size;					 // 윈도우사이즈
-			private Vector2 m_client_pos;			   // クライアント領域시작위치
-			private Vector2 m_client_size;			  // クライアント領域사이즈
+			private Vector2 m_client_pos;			   // 클라이언트領域시작위치
+			private Vector2 m_client_size;			  // 클라이언트領域사이즈
 
 			private Vector2 m_screen_size;			  // 화면사이즈
-														// クライアント領域그리기デリゲートが참조する
+														// 클라이언트領域그리기デリゲートが참조する
 			private float m_z;
 
 			private int m_back_color;			   // 背景색
@@ -185,7 +185,7 @@ namespace directx {
 					case hit_check.title_button:
 						return true;
 					case hit_check.client:
-						// クライアント領域
+						// 클라이언트領域
 						OnMouseDownClient(pos, button);
 						return true;
 				}
@@ -209,7 +209,7 @@ namespace directx {
 						}
 						return true;
 					case hit_check.client:
-						// クライアント領域
+						// 클라이언트領域
 						OnMouseClikClient(pos, button);
 						return true;
 				}
@@ -231,7 +231,7 @@ namespace directx {
 						}
 						return true;
 					case hit_check.client:
-						// クライアント領域
+						// 클라이언트領域
 						OnMouseDClikClient(pos, button);
 						return true;
 				}
@@ -248,7 +248,7 @@ namespace directx {
 					case hit_check.title_button:
 						return true;
 					case hit_check.client:
-						// クライアント領域
+						// 클라이언트領域
 						OnMouseWheelClient(pos, delta);
 						return true;
 				}
@@ -267,7 +267,7 @@ namespace directx {
 						if (window_mode == mode.normal) return "クリックで最소化";
 						else return "クリックで元の사이즈に戻す";
 					case hit_check.client:
-						// クライアント領域
+						// 클라이언트領域
 						return OnToolTipStringClient(pos);
 				}
 				return null;
@@ -312,7 +312,7 @@ namespace directx {
 					m_device.DrawLine(new Vector3(m_pos.X + m_size.X - 7, m_pos.Y + 7, m_z), new Vector2(m_pos.X + m_size.X - 2, m_pos.Y + 7), Color.FromArgb(50, 50, 50).ToArgb());
 
 					if (m_client_size.Y >= 0) {
-						// 그리기범위をクライアント領域に限定する
+						// 그리기범위を클라이언트領域に限定する
 						//						Viewport	view	= SetViewport(	(int)client_pos.X,
 						//															(int)client_pos.Y,
 						//															(int)client_size.X +1,
@@ -416,7 +416,7 @@ namespace directx {
 					if (pos.Y < client_pos.Y) return hit_check.inside;
 					if (pos.Y >= client_pos.Y + client_size.Y) return hit_check.inside;
 
-					// 残りはクライアント領域
+					// 残りは클라이언트領域
 					return hit_check.client;
 				}
 			}
@@ -445,12 +445,12 @@ namespace directx {
 			---------------------------------------------------------------------------*/
 
 			/*-------------------------------------------------------------------------
-			 クライアント領域の更新
+			 클라이언트領域の更新
 			---------------------------------------------------------------------------*/
 			virtual protected void OnUpdateClient() {
 			}
 			/*-------------------------------------------------------------------------
-			 クライアント領域の그리기
+			 클라이언트領域の그리기
 			---------------------------------------------------------------------------*/
 			virtual protected void OnDrawClient() {
 			}
@@ -475,7 +475,7 @@ namespace directx {
 			virtual protected void OnMouseWheelClient(Point pos, int delta) {
 			}
 			/*-------------------------------------------------------------------------
-			 クライアント領域のツールチップの取得
+			 클라이언트領域のツールチップの取得
 			---------------------------------------------------------------------------*/
 			virtual protected string OnToolTipStringClient(Point pos) {
 				return null;
@@ -539,7 +539,7 @@ namespace directx {
 		}
 
 		/*-------------------------------------------------------------------------
-		 ヒットチェックのみ
+		 ヒット체크のみ
 		---------------------------------------------------------------------------*/
 		public bool HitTest(Vector2 pos) {
 			foreach (window w in m_windows) {

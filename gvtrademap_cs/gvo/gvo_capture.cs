@@ -90,7 +90,7 @@ namespace gvtrademap_cs {
 		---------------------------------------------------------------------------*/
 		private gvt_lib m_lib;
 
-		// 캡처画상チェック용
+		// 캡처画상체크용
 		private Texture m_debug_texture;
 		private Texture m_debug_texture2;
 

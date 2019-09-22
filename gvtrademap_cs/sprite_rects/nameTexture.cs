@@ -60,7 +60,7 @@ namespace gvtrademap_cs {
 		public Texture elseTexture { get { return m_elseTexture; } }
 		
 		/*-------------------------------------------------------------------------
-		 初期化
+		 초기화
 		---------------------------------------------------------------------------*/
 		public nameTexture(d3d_device device) {
 			if (device == null) {

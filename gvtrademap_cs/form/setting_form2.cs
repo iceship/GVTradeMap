@@ -69,7 +69,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 初期化
+		 초기화
 		---------------------------------------------------------------------------*/
 		private void init(GlobalSettings _setting, KeyAssignList assign_list, string device_info, tab_index index, DrawSettingPage page) {
 			// 설정내용をコピーして持つ
@@ -209,7 +209,7 @@ namespace gvtrademap_cs {
 			// 버전정보
 			label5.Text = def.WINDOW_TITLE;
 
-			// 표시항목の初期化
+			// 표시항목の초기화
 			init_draw_setting(page);
 
 			// 유효, 무효の업데이트
@@ -227,7 +227,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 표시항목の初期化
+		 표시항목の초기화
 		---------------------------------------------------------------------------*/
 		private void init_draw_setting(DrawSettingPage page) {
 			// @Web icons
@@ -522,7 +522,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 최신버전チェック
+		 최신버전체크
 		---------------------------------------------------------------------------*/
 		private void button4_Click(object sender, EventArgs e) {
 			Cursor = Cursors.WaitCursor;

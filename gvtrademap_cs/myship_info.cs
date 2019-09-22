@@ -1,7 +1,7 @@
 ﻿/*-------------------------------------------------------------------------
 
  본인の배정보
- 정보取得はLocalPCもしくはナビゲーションクライアントから行う
+ 정보取得はLocalPCもしくはナビゲーション클라이언트から行う
  일付しか得られないときの위치予測표시付き
 
 ---------------------------------------------------------------------------*/
@@ -33,8 +33,8 @@ namespace gvtrademap_cs {
 	 
 	---------------------------------------------------------------------------*/
 	public class myship_info {
-		// ナビゲーションクライアントからの受信タイムアウト
-		// タイムアウト時は나침반の각도を初期化する
+		// ナビゲーション클라이언트からの受信タイムアウト
+		// タイムアウト時は나침반の각도を초기화する
 		// 항로공유時は해상ではない扱いとなる
 		private const int FROM_CLIENT_RECEIVE_TIME_OUT = 1000 * 5;  // 5초
 																	// 해상ではないと判断する시간
@@ -61,7 +61,7 @@ namespace gvtrademap_cs {
 		private bool m_is_in_the_sea;	   // 해상のときtrue
 											//		private float				m_show_speed;			// 도달예상표시アニメーション용속도
 
-		private gvo_server_service m_server_service;		// ナビゲーションクライアントからの受信
+		private gvo_server_service m_server_service;		// ナビゲーション클라이언트からの受信
 
 		private DateTimer m_capture_timer;	  // 캡처간격용
 		private int m_capture_interval;	 // 캡처간격
@@ -110,7 +110,7 @@ namespace gvtrademap_cs {
 			// 도달예상アニメーション용속도
 			//			m_show_speed			= 0;
 
-			m_server_service = new gvo_server_service();		// ナビゲーションクライアントからの受信
+			m_server_service = new gvo_server_service();		// ナビゲーション클라이언트からの受信
 			m_capture_timer = new DateTimer();			  // 캡처간격용
 			m_expect_pos_timer = new DateTimer();			   // 예상위치계산용
 			m_expect_delay_timer = new DateTimer();			 // 예상위치消去용ディレイタイマ
@@ -144,7 +144,7 @@ namespace gvtrademap_cs {
 
 			// 정보の업데이트
 			if (m_lib.setting.is_server_mode) {
-				// ナビゲーションクライアントからの受信
+				// ナビゲーション클라이언트からの受信
 				do_receive_client();
 			} else {
 				// 화면캡처
@@ -231,7 +231,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 クライアントからの受信チェック
+		 클라이언트からの受信체크
 		---------------------------------------------------------------------------*/
 		private void do_receive_client() {
 			// 캡처정보を受信したか조사
@@ -294,8 +294,8 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 본인の배の정보업데이트
-		 クライアントから受信した정보か自ら得た정보かは考慮されない
+		 본인의 배 정보업데이트
+		 클라이언트から受信した정보か自ら得た정보かは考慮されない
 		---------------------------------------------------------------------------*/
 		private void update_myship_data(int sectiontime, gvo_analized_data data) {
 			// 
@@ -303,7 +303,7 @@ namespace gvtrademap_cs {
 
 			// 항로기록없음ならなにもしない
 			if (!m_lib.setting.save_searoutes) {
-				// 위치と각도は初期化する
+				// 위치と각도は초기화する
 				m_pos = new Point(-1, -1);
 				m_is_in_the_sea = false;
 				// 도달예상を리셋
@@ -340,7 +340,7 @@ namespace gvtrademap_cs {
 				return;
 			}
 
-			// 캡처が成功したかチェック
+			// 캡처が成功したか체크
 			if (!data.capture_success) {
 				// 일付のみ캡처成功
 				m_is_draw_expect_pos = true;		// 도달예상위치を그리기する必要あり
@@ -597,7 +597,7 @@ namespace gvtrademap_cs {
 		 도달예상위치를 그리기시작하면 true를 반환
 		---------------------------------------------------------------------------*/
 		private bool draw_expect_pos(Vector2 pos, float speed) {
-			// 표시する必要があるかチェック
+			// 표시する必要があるか체크
 			if (!is_draw_expect_pos) return false;
 			// 최저속도
 			if (speed_calculator.MapToKnotSpeed(speed) < STEP_POSITION_SPEED_MIN) return false;

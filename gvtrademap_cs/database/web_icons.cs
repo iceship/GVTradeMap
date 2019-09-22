@@ -184,7 +184,7 @@ namespace gvtrademap_cs {
 		 최적화현황が変わった場合は그리기목록を作りなおす
 		---------------------------------------------------------------------------*/
 		public void Update() {
-			// 설정변경のチェック
+			// 설정변경の체크
 			if ((m_optimize == m_lib.setting.remove_near_web_icons)
 				&& (m_draw_flags == m_lib.setting.draw_setting_web_icons)) {
 				// 설정변경없음
@@ -314,7 +314,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 표시항목チェック
+		 표시항목체크
 		---------------------------------------------------------------------------*/
 		private bool is_draw(int index) {
 			// 그리기플래그

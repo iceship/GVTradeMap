@@ -401,7 +401,7 @@ namespace Utility
 
 		//-------------------------------------------------------------------------
 		/// <summary>
-		/// CMDを実行する. 
+		/// CMDを실행する. 
 		/// STDOUTの내용を返す. 
 		/// </summary>
 		/// <param name="Argments">コマンドと引수</param>
@@ -455,8 +455,8 @@ namespace Utility
 		/// </remarks>
 		/// <param name="listview">대상のListView</param>
 		/// <param name="tooltip">대상のToolTip</param>
-		/// <param name="mouse_x">マウス위치 (listviewのクライアント좌표)</param>
-		/// <param name="mouse_y">マウス위치 (listviewのクライアント좌표)</param>
+		/// <param name="mouse_x">マウス위치 (listviewの클라이언트좌표)</param>
+		/// <param name="mouse_y">マウス위치 (listviewの클라이언트좌표)</param>
 		static public void UpdateListViewSubItemToolTip(ListView listview, ToolTip tooltip, int mouse_x, int mouse_y)
 		{
 			if (listview == null) return;

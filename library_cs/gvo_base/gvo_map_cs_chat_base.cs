@@ -211,7 +211,7 @@ namespace gvo_base {
 		 분석대상を설정する
 		---------------------------------------------------------------------------*/
 		private void init_analyze_list() {
-			// 분석ルールを初期化する
+			// 분석ルールを초기화する
 			base.ResetAnalizedList();
 
 			// index0の항목
@@ -264,16 +264,16 @@ namespace gvo_base {
 
 			// 最新로그を분석
 			if (!base.AnalyzeNewestChatLog()) return false;
-			// 更新されたかチェック
+			// 更新されたか체크
 			if (!base.is_update) return true;
 
-			// 분석내용をチェックする
+			// 분석내용を체크する
 			update_analyze();
 			return true;
 		}
 
 		/*-------------------------------------------------------------------------
-		 분석내용をチェックする
+		 분석내용を체크する
 		---------------------------------------------------------------------------*/
 		private void update_analyze() {
 			foreach (gvo_chat_base.analized_data d in base.analized_list) {

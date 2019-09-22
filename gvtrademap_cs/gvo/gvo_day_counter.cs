@@ -26,7 +26,7 @@ namespace gvtrademap_cs
 		private const int					DEF_COUNTER_MAX	= 99;	// 카운터がカンストする初期値
 	
 		private int							m_days;					// 確定분
-		private int							m_voyage_days_start;	// チェック開始時の항해일수
+		private int							m_voyage_days_start;	// 체크開始時の항해일수
 		private int							m_voyage_days;			// 현재の항해일수
 		private int							m_counter_max;			// 카운터がカンストする일수
 

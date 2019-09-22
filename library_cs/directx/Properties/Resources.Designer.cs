@@ -18,7 +18,7 @@ namespace directx.Properties {
 	// このクラスは StronglyTypedResourceBuilder クラスが ResGen
 	// または Visual Studio のようなツールを사용して自動生成されました. 
 	// メンバーを추가または삭제するには, .ResX 파일を編集して, /str オプションと共に
-	// ResGen を実行し直すか, または VS プロジェクトをビルドし直します. 
+	// ResGen を실행し直すか, または VS プロジェクトをビルドし直します. 
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
 	[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 	[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

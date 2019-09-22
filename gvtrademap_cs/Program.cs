@@ -10,7 +10,7 @@ namespace gvtrademap_cs
 	static class Program
 	{
 		/// <summary>
-		/// アプリケーションのメイン エントリ ポイントです. 
+		/// アプリケーションの메인 エントリ ポイントです. 
 		/// </summary>
 		[STAThread]
 		static void Main()
@@ -22,7 +22,7 @@ namespace gvtrademap_cs
 				Application.EnableVisualStyles();
 				Application.SetCompatibleTextRenderingDefault(false);
 
-				// MDX1.1チェック
+				// MDX1.1체크
 				AssemblyName	error_ass	= null;
 				if(!Useful.LoadReferencedAssembly(Assembly.GetExecutingAssembly(), out error_ass)){
 					// Assemblyの읽기に실패
@@ -37,7 +37,7 @@ namespace gvtrademap_cs
 #endif
 					using(gvtrademap_cs_form frm = new gvtrademap_cs_form())
 					{
-						if(frm.Initialize()){		// 初期化
+						if(frm.Initialize()){		// 초기화
 							device_info_string	= frm.device_info_string;
 							frm.Show();				// 표시開始
 

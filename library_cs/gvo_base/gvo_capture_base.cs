@@ -134,7 +134,7 @@ namespace gvo_base {
 			m_enable_days = true;	   // 항해일수분석유효
 			m_enable_angle = true;	  // 나침반분석유효
 
-			// 분석결과初期化
+			// 분석결과초기화
 			m_point = new Point(-1, -1);
 			m_days = -1;
 			m_angle = -1;
@@ -196,7 +196,7 @@ namespace gvo_base {
 
 			if (hwnd == IntPtr.Zero) return IntPtr.Zero;
 
-			// クライアント領域を화면좌표に변환する
+			// 클라이언트領域を화면좌표に변환する
 			Point p = new Point();
 			user32.GetClientRect(hwnd, ref rect);
 			user32.ClientToScreen(hwnd, ref p);
@@ -438,7 +438,7 @@ namespace gvo_base {
 
 			if (color_0 > 128 * 3 || color_1 > 128 * 3) {
 				// 3桁か1桁
-				// さらにチェックする
+				// さらに체크する
 				index = (stride * 16) + 2 * 3;
 				color_0 = image[index + 0]
 							+ image[index + 1]

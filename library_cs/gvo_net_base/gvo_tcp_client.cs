@@ -1,7 +1,7 @@
 ﻿/*-------------------------------------------------------------------------
 
  교역MapC#용
- TCPクライアント
+ TCP클라이언트
 
 ---------------------------------------------------------------------------*/
 
@@ -83,7 +83,7 @@ namespace gvo_net_base
 			: base(PROTOCOL_NAME, PROTOCOL_VERSION)
 		{
 			init();
-			// クライアントは데이터受信しない
+			// 클라이언트は데이터受信しない
 			m_enable_receive_data	= false;
 		}
 		public gvo_tcp_client(Socket sct)

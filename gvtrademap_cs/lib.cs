@@ -108,7 +108,7 @@ namespace gvtrademap_cs {
 			m_ini_manager.AddIniSaveLoad(m_setting);
 			m_ini_manager.AddIniSaveLoad(m_key_assign_manager, "key_assign");
 
-			// メイン윈도우그리기용
+			// 메인윈도우그리기용
 			m_d3d_device = new d3d_device(form);
 			m_d3d_device.skip_max = def.SKIP_DRAW_FRAME_MAX;		// 그리기스킵수
 
@@ -121,7 +121,7 @@ namespace gvtrademap_cs {
 			// 도시등の문자の絵관리
 			m_nameTexture = new nameTexture(m_d3d_device);
 			
-			// 키할당初期化
+			// 키할당초기화
 			init_key_assign();
 		}
 
@@ -142,7 +142,7 @@ namespace gvtrademap_cs {
 		}
 
 		/// <summary>
-		/// 키할당初期化
+		/// 키할당초기화
 		/// </summary>
 		private void init_key_assign() {
 			m_key_assign_manager.List.AddAssign("지도변경", "지도", Keys.M, KeyFunction.map_change);

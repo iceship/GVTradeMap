@@ -235,7 +235,7 @@ namespace gvtrademap_cs {
 
 			m_draw_infonames = new draw_infonames(lib, this);
 
-			// 서버と국を初期化
+			// 서버と국を초기화
 			// 오류번호としておく
 			m_server = GvoWorldInfo.Server.Unknown;
 			m_my_country = GvoWorldInfo.Country.Unknown;

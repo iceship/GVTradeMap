@@ -34,7 +34,7 @@ namespace gvtrademap_cs {
 		private const int WINDOW_SIZE_X = 250;  // 初期사이즈
 		private const int WINDOW_SIZE_Y = 200;  // 初期사이즈
 
-		// クライアント사이즈
+		// 클라이언트사이즈
 		// 세로は윈도우사이즈から계산される
 		private const int CLIENT_SIZE_X = (16 + 4) * (int)setting_icons_index.max + 6;
 
@@ -289,7 +289,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 実行する기능を得る
+		 실행する기능を得る
 		---------------------------------------------------------------------------*/
 		private KeyFunction get_extc_function(setting_icons_index index) {
 			switch (index) {

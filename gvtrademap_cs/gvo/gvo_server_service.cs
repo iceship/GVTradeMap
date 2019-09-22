@@ -91,7 +91,7 @@ namespace gvtrademap_cs
 		}
 
 		/*-------------------------------------------------------------------------
-		 クライアントを得る
+		 클라이언트を得る
 		 通信중でない場合はnullを返す
 		---------------------------------------------------------------------------*/
 		public gvo_tcp_client GetClient()
@@ -102,7 +102,7 @@ namespace gvtrademap_cs
 			if(list == null)		return null;
 			if(list.Length <= 0)	return null;
 
-			// 최초に연결されたクライアント
+			// 최초に연결された클라이언트
 			return list[0];
 		}
 	}

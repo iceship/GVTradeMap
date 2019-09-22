@@ -44,7 +44,7 @@ namespace gvtrademap_cs
 				return false;
 			}
 
-			// 작성함かどうかのチェック
+			// 작성함かどうかの체크
 			if(!File.Exists(fname_c)){
 				// Cがないときは無条건で작성
 				is_create	= true;
@@ -81,7 +81,7 @@ namespace gvtrademap_cs
 						byte c21	= image_b[index + 1];
 						byte c22	= image_b[index + 2];
 
-						// 抜きチェック
+						// 抜き체크
 						// 白
 						if(   (c20 >= 250)
 							&&(c21 >= 250)

@@ -397,7 +397,7 @@ namespace Utility.Xml
 			XmlNode		group_node	= get_group(group_name);
 			XmlNode		node		= group_node[name];
 
-			// 要素があるかチェック
+			// 要素があるか체크
 			if(node != null){
 				// 子供を全部삭제
 				node.RemoveAll();

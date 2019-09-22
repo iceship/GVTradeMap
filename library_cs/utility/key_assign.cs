@@ -12,7 +12,7 @@ namespace Utility.KeyAssign
 {
 	//-------------------------------------------------------------------------
 	/// <summary>
-	/// ショートカット実行용デリゲート
+	/// ショートカット실행용デリゲート
 	/// </summary>
 	/// <param name="sender"></param>
 	/// <param name="arg"></param>
@@ -20,7 +20,7 @@ namespace Utility.KeyAssign
 
 	//-------------------------------------------------------------------------
 	/// <summary>
-	/// ショートカット実行時の引수
+	/// ショートカット실행時の引수
 	/// </summary>
 	public sealed class KeyAssignEventArg : EventArgs
 	{
@@ -58,7 +58,7 @@ namespace Utility.KeyAssign
 		/// <returns>アサイン가능ならtrue</returns>
 		public override bool CanAssignKeys(Keys key)
 		{
-			// System.Windows.Forms.Shortcutかどうかチェック
+			// System.Windows.Forms.Shortcutかどうか체크
 			if(!KeyAssignRule.IsShortcut(key))	return false;
 
 			// base
@@ -206,7 +206,7 @@ namespace Utility.KeyAssign
 			if((key & Keys.Control) != 0)	str	+= "Ctrl+";
 			if((key & Keys.Shift) != 0)		str += "Shift+";
 
-			// 할당られる키かチェック
+			// 할당られる키か체크
 			if(CanAssignKeys(key)){
 				str	+= keys_to_string(key);
 			}else{
@@ -272,10 +272,10 @@ namespace Utility.KeyAssign
 	/// <remarks>
 	/// <para>키アサインを관리する. </para>
 	/// <para>1つの키アサインに할り振れる키は1つ. (Ctrl+C등)</para>
-	/// <para>List.AddAssign()を呼び, 키アサイン테이블을初期化する. </para>
+	/// <para>List.AddAssign()を呼び, 키アサイン테이블을초기화する. </para>
 	/// <para>このクラスはIIniSaveLoadを継承しているため, IniBaseを사용した설정파일の읽기が가능. </para>
 	/// <para>ShowSettingDialog()でKeyAssignFormによる설정が가능</para>
-	/// <para>アサインを実行するにはProcessCmdKey()を呼ぶ. </para>
+	/// <para>アサインを실행するにはProcessCmdKey()を呼ぶ. </para>
 	/// <para>ProcessCmdKey()は통상FormのProcessCmdKey()내で呼ぶ. </para>
 	/// <para>할당가능かどうかの判定にはAssignRuleが사용される. </para>
 	/// <para>独自の할당ルールを지정する場合は, AssignRuleを継承しコンストラクタに渡す. </para>
@@ -283,12 +283,12 @@ namespace Utility.KeyAssign
 	/// <para>AssignRuleを継承したKeyAssignRuleOnlyShortcutはSystem.Windows.Forms.Shortcutのみを할당가능にする. </para>
 	/// <para>メニューやコンテキストメニューと同期させるには, </para>
 	/// <para>BindTagForMenuItem()でタグを関連付け, UpdateMenuShortcutKeys()でショートカット키の표시を更新する. </para>
-	/// <para>同期させるとメニュークリックのアサイン実行が自動で行われる. </para>
+	/// <para>同期させるとメニュークリックのアサイン실행が自動で行われる. </para>
 	/// </remarks>
 	public class KeyAssignManager : IIniSaveLoad
 	{
 		private KeyAssignList				m_list;						// assign list
-		private OnProcessCmdKey				m_on_processcmdkey;			// ショートカットの実行
+		private OnProcessCmdKey				m_on_processcmdkey;			// ショートカットの실행
 		private EventHandler				m_on_update_assign_list;	// アサイン목록が更新されたときに呼び出されるデリゲート
 
 		//-------------------------------------------------------------------------
@@ -348,14 +348,14 @@ namespace Utility.KeyAssign
 
 		//-------------------------------------------------------------------------
 		/// <summary>
-		/// ショートカットの実行. 
-		/// 통상メインformのProcessCmdKey내で呼び出す. 
+		/// ショートカットの실행. 
+		/// 통상메인formのProcessCmdKey내で呼び出す. 
 		/// Assignされた키が押された場合, OnProcessCmdKeyに등록された
 		/// デリゲートが呼び出される. 
-		/// 意図しない呼び出しをチェックするため, OnProcessCmdKeyがnullの場合例외を投げる
+		/// 意図しない呼び出しを체크するため, OnProcessCmdKeyがnullの場合例외を投げる
 		/// </summary>
 		/// <param name="keyData">keyData</param>
-		/// <returns>ショートカットを実行した場合true</returns>
+		/// <returns>ショートカットを실행した場合true</returns>
 		public bool ProcessCmdKey(Keys keyData)
 		{
 			if(m_on_processcmdkey == null)	throw new Exception("OnProcessCmdKeyにデリゲートを등록してから사용してください. ");
@@ -372,7 +372,7 @@ namespace Utility.KeyAssign
 
 		//-------------------------------------------------------------------------
 		/// <summary>
-		/// メニューをクリックされたときのショートカットの実行. 
+		/// メニューをクリックされたときのショートカットの실행. 
 		/// メニューのClickイベント내で呼ぶ. 
 		/// BindTagForMenuItem()でタグを설정しておけば自動で呼ばれる. 
 		/// </summary>
@@ -386,10 +386,10 @@ namespace Utility.KeyAssign
 			if(!(sender is ToolStripMenuItem))	return;
 			ToolStripMenuItem	ts	= (ToolStripMenuItem)sender;
 
-			// Tagがnullかどうかだけチェック
+			// Tagがnullかどうかだけ체크
 			if(ts.Tag == null)					return;
 
-			// ショートカット実行
+			// ショートカット실행
 			m_on_processcmdkey(this, new KeyAssignEventArg(ts.Tag));
 		}
 

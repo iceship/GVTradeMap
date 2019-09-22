@@ -60,7 +60,7 @@ namespace gvtrademap_cs {
 		// 화면외判定時の余白
 		private const float BB_OUTSIDESCREEEN_OFFSET = 32f;
 
-		// 스크린샷の분布チェック単位(dot)
+		// 스크린샷の분布체크単位(dot)
 		private const int SS_DISTRIBUTION_X = 64;
 
 		/*-------------------------------------------------------------------------
@@ -587,7 +587,7 @@ namespace gvtrademap_cs {
 					// 추가
 					if (near_p != null) route.AddPoint(near_p.Position);
 
-					// 바운딩 박스の사이즈チェック
+					// 바운딩 박스の사이즈체크
 					// 분할플래그か사이즈が대きすぎるとき분할する
 					if ((near_p != m_routes[i])			 // ループを考慮した위치を추가したか, 추가されなかった
 						|| (route.Size.X >= BB_SIZE_MAX)			// 바운딩 박스の사이즈を超えた
@@ -610,7 +610,7 @@ namespace gvtrademap_cs {
 			}
 
 			/*-------------------------------------------------------------------------
-			 距離が遠い場合のチェック
+			 距離が遠い場合の체크
 			 각도差で추가するかどうかを決める
 			 각도差がありすぎるときはnullを返す
 			---------------------------------------------------------------------------*/
@@ -643,7 +643,7 @@ namespace gvtrademap_cs {
 			 항로도그리기
 			---------------------------------------------------------------------------*/
 			public void DrawRoutes(Vector2 offset, LoopXImage image, bool is_select_mode) {
-				// 그리기する必要があるかチェック
+				// 그리기する必要があるか체크
 				if (!can_draw(is_select_mode)) return;
 
 				// 라인を구축
@@ -667,7 +667,7 @@ namespace gvtrademap_cs {
 			}
 
 			/*-------------------------------------------------------------------------
-			 그리기するかチェック
+			 그리기するか체크
 			 선택모드중の선택없음
 			 그리기플래그
 			 항해일수が그리기する최저항해일수に満たない
@@ -692,7 +692,7 @@ namespace gvtrademap_cs {
 			 デバッグ용
 			---------------------------------------------------------------------------*/
 			public void DrawRoutesBB(Vector2 offset, LoopXImage image, bool is_select_mode) {
-				// 그리기する必要があるかチェック
+				// 그리기する必要があるか체크
 				if (!can_draw(is_select_mode)) return;
 
 				foreach (RouteLineBB line in m_line_routes) {
@@ -704,7 +704,7 @@ namespace gvtrademap_cs {
 			 말풍선그리기
 			---------------------------------------------------------------------------*/
 			public void DrawPopups(Vector2 offset, LoopXImage image, bool is_select_mode) {
-				// 그리기する必要があるかチェック
+				// 그리기する必要があるか체크
 				if (!can_draw(is_select_mode)) return;
 
 				float size = image.ImageScale;
@@ -785,7 +785,7 @@ namespace gvtrademap_cs {
 			 재해그리기
 			---------------------------------------------------------------------------*/
 			public void DrawAccidents(Vector2 offset, LoopXImage image, bool is_select_mode) {
-				// 그리기する必要があるかチェック
+				// 그리기する必要があるか체크
 				if (!can_draw(is_select_mode)) return;
 
 				// 반투명具合を反映
@@ -831,7 +831,7 @@ namespace gvtrademap_cs {
 			}
 
 			/*-------------------------------------------------------------------------
-			 표시항목チェック
+			 표시항목체크
 			---------------------------------------------------------------------------*/
 			private bool is_draw_popups(int index) {
 				// 그리기플래그
@@ -877,7 +877,7 @@ namespace gvtrademap_cs {
 
 			/*-------------------------------------------------------------------------
 			 읽기開始
-			 항해시간を初期化する
+			 항해시간を초기화する
 			---------------------------------------------------------------------------*/
 			public void StartLoad() {
 				m_date = new DateTime();
@@ -1008,7 +1008,7 @@ namespace gvtrademap_cs {
 			 含まれる범위を등록する
 			---------------------------------------------------------------------------*/
 			public void SS_AddMinMaxList(List<Point>[] map, ref int min_y, ref int max_y, bool is_select_mode) {
-				// 그리기する必要があるかチェック
+				// 그리기する必要があるか체크
 				if (!can_draw(is_select_mode)) return;
 
 				foreach (SeaRoutePoint p in m_routes) {
@@ -1120,7 +1120,7 @@ namespace gvtrademap_cs {
 			// 선택모드
 			m_is_select_mode = false;
 
-			// 추가初期化
+			// 추가초기화
 			init_add_points();
 
 			// 以前の버전の읽기

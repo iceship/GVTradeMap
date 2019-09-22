@@ -39,7 +39,7 @@ namespace gvtrademap_cs {
 		private ItemDatabaseCustom m_item_database; // 아이템DB
 		private ShipPartsDataBase m_ship_parts_database;	// 배부품DB
 		private sea_area m_sea_area;			// 위험해역변동시스템
-		private gvo_season m_season;			// 季節チェック
+		private gvo_season m_season;			// 季節체크
 
 		private gvt_lib m_lib;
 
@@ -66,7 +66,7 @@ namespace gvtrademap_cs {
 		public GvoDatabase(gvt_lib lib) {
 			m_lib = lib;
 
-			// 季節チェック
+			// 季節체크
 			m_season = new gvo_season();
 
 			// 세계の정보

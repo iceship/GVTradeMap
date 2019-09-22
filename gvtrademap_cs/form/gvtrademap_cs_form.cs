@@ -205,7 +205,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 初期化
+		 초기화
 		---------------------------------------------------------------------------*/
 		public bool Initialize() {
 			// アプリケーションの格納パス
@@ -284,7 +284,7 @@ namespace gvtrademap_cs {
 			m_show_tooltip = false;
 			m_tooltip_old_mouse_pos = new Point(0, 0);
 
-			// 설정정보初期化
+			// 설정정보초기화
 			// 윈도우위치등を反映
 			init_setting();
 
@@ -369,7 +369,7 @@ namespace gvtrademap_cs {
 
 		/*-------------------------------------------------------------------------
 		 メニューのタグを설정する
-		 TagにKeyFunctionを지정することで自動でコマンドが実行されるようにする
+		 TagにKeyFunctionを지정することで自動でコマンドが실행されるようにする
 		---------------------------------------------------------------------------*/
 		private void init_menu_tag() {
 			m_lib.KeyAssignManager.BindTagForMenuItem(exexgvoacToolStripMenuItem, KeyFunction.setting_window_button_exec_gvoac);
@@ -465,7 +465,7 @@ namespace gvtrademap_cs {
 		 OnPaint
 		---------------------------------------------------------------------------*/
 		private void m_main_window_Paint(object sender, PaintEventArgs e) {
-			// メイン윈도우の업데이트
+			// 메인윈도우の업데이트
 			// ダイア로그그리기時のために용意しておく
 			// 背景を그리기する関수が불명のため, 一도背景색で전체を塗られる
 			m_lib.device.SetMustDrawFlag();
@@ -496,30 +496,30 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우の업데이트
+		 메인윈도우の업데이트
 		---------------------------------------------------------------------------*/
 		public void update_main_window() {
 			if (m_lib.device.device == null) return;
 
-			// 最前열표시
+			// Windows Top Most
 			if (this.TopMost != m_lib.setting.window_top_most) {
 				this.TopMost = m_lib.setting.window_top_most;
 			}
 
-			// 지도변경チェック
+			// 지도변경체크
 			load_map();
 
 			if (is_load) {
-				// 何か로딩중
+				// 로딩중
 
-				// 최소화중は그리지않음
+				// 최소화중에는 그리지않음
 				if (m_pause) return;
 
 				update_main_window_load();
+
 			} else {
 				// 통상時
-
-				// タスクの実行
+				// Task 실행
 				do_tasks();
 
 				// 최소화중は그리지않음
@@ -541,7 +541,7 @@ namespace gvtrademap_cs {
 #endif
 
 			//
-			// リクエストの実行
+			// リクエストの실행
 			//
 
 			// 검색ダイア로그の표시
@@ -728,7 +728,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우に마우스カーソルがあるかどうかを조사
+		 메인윈도우に마우스カーソルがあるかどうかを조사
 		---------------------------------------------------------------------------*/
 		private bool is_inside_mouse_cursor_main_window() {
 			Point pos = this.PointToClient(MousePosition);
@@ -824,7 +824,7 @@ namespace gvtrademap_cs {
 				def.MIX_MAP_FULLFNAME2,
 			};
 
-			// 進捗현황取得용に初期化
+			// 進捗현황取得용に초기화
 			m_lib.loop_image.InitializeCreateImage();
 			if (!m_db.SeaArea.IsLoadedMask) {
 				m_db.SeaArea.InitializeFromMaskInfo();
@@ -972,10 +972,10 @@ namespace gvtrademap_cs {
 		#region タイマコールバック
 		/*-------------------------------------------------------------------------
 		 항로공유タイマコールバック
-		 ついでに季節チェック을실시
+		 ついでに季節체크을실시
 		---------------------------------------------------------------------------*/
 		private void share_timer_Tick(object sender, EventArgs e) {
-			// 季節チェック업데이트
+			// 季節체크업데이트
 			if (m_db.GvoSeason.UpdateSeason()) {
 				// 季節が変わった
 				// 지도업데이트をリクエストする
@@ -1004,7 +1004,7 @@ namespace gvtrademap_cs {
 
 		#region 마우스関係
 		/*-------------------------------------------------------------------------
-		 メイン윈도우내で마우스ボタン押す
+		 메인윈도우내で마우스ボタン押す
 		---------------------------------------------------------------------------*/
 		private void MainWindowMouseDown(object sender, MouseEventArgs e) {
 			Point pos = new Point(e.X, e.Y);
@@ -1018,13 +1018,13 @@ namespace gvtrademap_cs {
 				ActiveControl = null;
 			}
 
-			// 윈도우관리チェック
+			// 윈도우관리체크
 			if (m_windows.OnMouseDown(pos, e.Button)) {
 				this.Capture = false;
 				return;
 			}
 
-			// 정보표시윈도우관리チェック
+			// 정보표시윈도우관리체크
 			if (m_info_windows.HitTest(pos)) {
 				this.Capture = false;
 				return;
@@ -1061,7 +1061,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우내で마우스클릭
+		 메인윈도우내で마우스클릭
 		---------------------------------------------------------------------------*/
 		private void gvtrademap_cs_form_MouseClick(object sender, MouseEventArgs e) {
 			Point pos = new Point(e.X, e.Y);
@@ -1069,12 +1069,12 @@ namespace gvtrademap_cs {
 			// 今회の위치を覚えておく
 			m_old_mouse_pos = pos;
 
-			// 윈도우관리チェック
+			// 윈도우관리체크
 			if (m_windows.OnMouseClick(pos, e.Button)) {
 				return;
 			}
 
-			// 정보표시윈도우관리チェック
+			// 정보표시윈도우관리체크
 			if (m_info_windows.OnMouseClick(pos, e.Button, this)) {
 				return;
 			}
@@ -1099,7 +1099,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우내で마우스ボタン離す
+		 메인윈도우내で마우스ボタン離す
 		---------------------------------------------------------------------------*/
 		private void MainWindowMouseUp(object sender, MouseEventArgs e) {
 			// 마우스캡처ー종료
@@ -1107,7 +1107,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우내で마우스이동
+		 메인윈도우내で마우스이동
 		---------------------------------------------------------------------------*/
 		private void MainWindowMouseMove(object sender, MouseEventArgs e) {
 			// 마우스캡처ー중なら
@@ -1124,10 +1124,10 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 メイン윈도우내で마우스ダブル클릭
+		 메인윈도우내で마우스ダブル클릭
 		---------------------------------------------------------------------------*/
 		private void m_main_window_MouseDoubleClick(object sender, MouseEventArgs e) {
-			// 윈도우관리が최초にチェック
+			// 윈도우관리が최초に체크
 			if (m_windows.OnMouseDoubleClick(new Point(e.X, e.Y), e.Button)) return;
 
 			// 윈도우では処理されなかった
@@ -1139,13 +1139,13 @@ namespace gvtrademap_cs {
 		private void FormMouseWheel(object sender, MouseEventArgs e) {
 			if (!is_inside_mouse_cursor_main_window()) return;
 
-			// メイン윈도우내
-			// 윈도우관리が최초にチェック
+			// 메인윈도우내
+			// 윈도우관리が최초に체크
 			Point client_mouse_pos = this.PointToClient(MousePosition);
 			if (m_windows.OnMouseWheel(client_mouse_pos, e.Delta)) return;
 
 			// 윈도우では処理されなかった
-			// メイン윈도우の스케일변경	
+			// 메인윈도우の스케일변경	
 			zoom_map((e.Delta > 0) ? true : false, client_mouse_pos);
 		}
 		#endregion
@@ -1156,12 +1156,12 @@ namespace gvtrademap_cs {
 		---------------------------------------------------------------------------*/
 		private void gvtrademap_cs_form_Resize(object sender, EventArgs e) {
 			// InitializeComponent()내で呼ばれる事例が보고されたため, 
-			// m_lib が작성されたかどうかをチェックする
+			// m_lib が작성されたかどうかを체크する
 			// このPCではInitializeComponent()내で呼ばれないため, デバッグ不가능
 			if (m_lib == null) return;
 			if (m_lib.setting == null) return;
 
-			// ウィンドウが최소화あるいは표시されているかどうかをチェック
+			// ウィンドウが최소화あるいは표시されているかどうかを체크
 			m_pause = ((this.WindowState == FormWindowState.Minimized) || !this.Visible);
 
 			// 설정정보を업데이트する
@@ -1272,11 +1272,11 @@ namespace gvtrademap_cs {
 							m_tooltip_interval = 0;
 						} else {
 							if (++m_tooltip_interval >= TOOLTIP_INITIAL) {
-								// クライアント좌표
+								// 클라이언트좌표
 								Point pos = this.PointToClient(MousePosition);
 								// 아이템윈도우からツールチップを得る
 								string str = m_windows.GetToolTipString(pos);
-								// メイン윈도우からツールチップを得る
+								// 메인윈도우からツールチップを得る
 								if (str == null) str = get_tooltip_string(pos);
 								if (str != null) {
 									// なにかツールチップがあれば표시する
@@ -1353,7 +1353,7 @@ namespace gvtrademap_cs {
 		#region 스크린샷
 		/*-------------------------------------------------------------------------
 		 스크린샷
-		 ビデオ메모リからメイン메모リへの전送속도の関係で
+		 ビデオ메모リから메인메모リへの전送속도の関係で
 		 フル사이즈だとかなり시간がかかる
 		 
 		 512*512の렌더링용サーフェイスを작성
@@ -1387,7 +1387,7 @@ namespace gvtrademap_cs {
 				// 렌더링 타겟
 				rendertarget = device.CreateRenderTarget(RENDER_TARGET_SIZE_X, RENDER_TARGET_SIZE_Y,
 																Format.R5G6B5, MultiSampleType.None, 0, false);
-				// メイン메모リ상のサーフェイス
+				// 메인메모リ상のサーフェイス
 				// 렌더링결과取り出し용
 				offscreen = device.CreateOffscreenPlainSurface(RENDER_TARGET_SIZE_X, RENDER_TARGET_SIZE_Y,
 																		Format.R5G6B5, Pool.SystemMemory);
@@ -1613,9 +1613,9 @@ namespace gvtrademap_cs {
 		}
 		#endregion
 
-		#region メイン윈도우 우클릭メニュー
+		#region 메인윈도우 우클릭メニュー
 		/*-------------------------------------------------------------------------
-		 メイン윈도우
+		 메인윈도우
 		 우클릭メニュー
 		---------------------------------------------------------------------------*/
 		private void main_window_context_menu(Point p) {
@@ -1909,7 +1909,7 @@ namespace gvtrademap_cs {
 				if (dlg.ShowDialog(this) == DialogResult.OK) {
 					// 反映させる
 					// フィルタの내용を反映した목록を사용する
-					// 해역정보は전부初期化してから反映される
+					// 해역정보は전부초기화してから反映される
 					m_db.SeaArea.UpdateFromDD(dlg.filterd_list, true);
 				}
 			} catch {
@@ -1921,7 +1921,7 @@ namespace gvtrademap_cs {
 
 		#region 定例処理関係
 		/*-------------------------------------------------------------------------
-		 장소リクエストを実行する
+		 장소リクエストを실행する
 		---------------------------------------------------------------------------*/
 		private void do_spot_request() {
 			if (m_lib.setting.req_spot_item.IsRequest()) {
@@ -1979,7 +1979,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 Cmd実行
+		 Cmd실행
 		---------------------------------------------------------------------------*/
 		protected override bool ProcessCmdKey(ref Message msg, Keys keyData) {
 			// フォーカスがTextBoxのときは優先的にTextBoxに키を渡す
@@ -1994,7 +1994,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 Cmd実行コールバック
+		 Cmd실행コールバック
 		---------------------------------------------------------------------------*/
 		private void process_cnd_key(object sender, KeyAssignEventArg arg) {
 			if (!(arg.Tag is KeyFunction)) return;
@@ -2002,9 +2002,9 @@ namespace gvtrademap_cs {
 		}
 		#endregion
 
-		#region 기능の実行
+		#region 기능の실행
 		/*-------------------------------------------------------------------------
-		 기능の実行
+		 기능の실행
 		---------------------------------------------------------------------------*/
 		public void ExecFunction(KeyFunction func) {
 			switch (func) {
@@ -2018,7 +2018,7 @@ namespace gvtrademap_cs {
 					break;
 				case KeyFunction.map_reset_scale:
 					// 스케일の리셋
-					// メイン윈도우の중心を중心に스케일변경
+					// 메인윈도우の중心を중心に스케일변경
 					m_lib.loop_image.SetScale(1, client_center(), true);
 					m_lib.device.SetMustDrawFlag();
 					break;
@@ -2190,7 +2190,7 @@ namespace gvtrademap_cs {
 		 지도の拡縮
 		---------------------------------------------------------------------------*/
 		private void zoom_map(bool is_zoom_in, Point center) {
-			// メイン윈도우の스케일변경	
+			// 메인윈도우の스케일변경	
 			float scale;
 			if (is_zoom_in) scale = m_lib.loop_image.ImageScale * 1.189f;
 			else scale = m_lib.loop_image.ImageScale * 0.841f;
@@ -2203,7 +2203,7 @@ namespace gvtrademap_cs {
 		}
 
 		/*-------------------------------------------------------------------------
-		 クライアント矩形の중心を得る
+		 클라이언트矩形の중心を得る
 		---------------------------------------------------------------------------*/
 		private Point client_center() {
 			Rectangle rect = this.ClientRectangle;

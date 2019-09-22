@@ -231,7 +231,7 @@ namespace gvtrademap_cs
 			pos.X += offset.X;
 			pos.Y += offset.Y;
 
-			// 그리기범위チェック
+			// 그리기범위체크
 			// debug
 			// 범위내の端付近で컬링する
 			//			if(pos.X + ImageSize.X < 0+32)		return;
@@ -280,7 +280,7 @@ namespace gvtrademap_cs
 
 		// 그리기支援デリゲート
 		// 그리기時のX방향ループに대응し, オフセットを解決する
-		// このデリゲートが何회呼ばれるかはクライアント사이즈と画상사이즈による
+		// このデリゲートが何회呼ばれるかは클라이언트사이즈と画상사이즈による
 		public delegate void DrawHandler(Vector2 draw_offset, LoopXImage image);
 
 		private bool m_device_lost;
@@ -325,7 +325,7 @@ namespace gvtrademap_cs
 		---------------------------------------------------------------------------*/
 		public void SetScale(float scale, Point center_pos, bool is_center_mouse)
 		{
-			// 범위チェック
+			// 범위체크
 			if (scale < SCALE_MIN) scale = SCALE_MIN;
 			if (scale > SCALE_MAX) scale = SCALE_MAX;
 
@@ -408,7 +408,7 @@ namespace gvtrademap_cs
 
 		/*-------------------------------------------------------------------------
 		 イメージの구축
-		 進捗현황の初期化
+		 進捗현황の초기화
 		---------------------------------------------------------------------------*/
 		public void InitializeCreateImage()
 		{
@@ -603,7 +603,7 @@ namespace gvtrademap_cs
 		---------------------------------------------------------------------------*/
 		public void Draw()
 		{
-			// 읽기チェック
+			// 읽기체크
 			if (m_image_size.X <= 0) return;
 			if (m_image_size.Y <= 0) return;
 
@@ -652,7 +652,7 @@ namespace gvtrademap_cs
 
 		/*-------------------------------------------------------------------------
 		 마우스좌표と표시オフセットを解決した좌표を得る
-		 마우스좌표はクライアントレクトからの相対좌표であること
+		 마우스좌표は클라이언트レクトからの相対좌표であること
 		---------------------------------------------------------------------------*/
 		public Point MousePos2GlobalPos(Point mouse_pos)
 		{
@@ -693,7 +693,7 @@ namespace gvtrademap_cs
 		}
 
 		/*-------------------------------------------------------------------------
-		 オフセット좌표がクライアント내に入るように조정する
+		 オフセット좌표が클라이언트내に入るように조정する
 		 X방향のみ
 		---------------------------------------------------------------------------*/
 		public Vector2 AjustLocalPos(Vector2 pos)

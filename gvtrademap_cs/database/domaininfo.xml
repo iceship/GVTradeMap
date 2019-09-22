@@ -1,3 +1,789 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <domaininfo_root>
+  <domain_info name="세우타">
+    <server name="헬레네" country="Portugal" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="앤트워프">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="함부르크">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="오슬로">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="베르겐">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="더블린">
+    <server name="헬레네" country="England" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="나폴리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="제노바">
+    <server name="헬레네" country="Unknown" />
+    <server name="폴라리스" country="Unknown" />
+    <server name="에이레네" country="Unknown" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="피사">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="시라쿠사">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="튀니스">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="트리폴리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="리가">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="뤼베크">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="스톡홀름">
+    <server name="헬레네" country="Unknown" />
+    <server name="폴라리스" country="Unknown" />
+    <server name="에이레네" country="Unknown" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="코펜하겐">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="파마구스타">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="베이루트">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="야파">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="살로니카">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아테네">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="간디아">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="카이로">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아르긴">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="카보베르데">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="시에라리온">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아비장">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="세인트조지스">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="상투메">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="가봉">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="루안다">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="카리비브">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="케이프타운">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="이냠바느">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="소팔라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="모잠비크">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="타마타브">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="잔지바르">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="몸바사">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="모가디슈">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아덴">
+    <server name="헬레네" country="Turkey" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="마사와">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="수에즈">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="무스카트">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="호르무즈">
+    <server name="헬레네" country="Turkey" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="바스라">
+    <server name="헬레네" country="Turkey" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="디우">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="고어">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Unknown" />
+    <server name="에이레네" country="Unknown" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="망갈">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Unknown" />
+    <server name="에이레네" country="Unknown" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="캘리컷">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="코친">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="퐁디셰리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="실론">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="마술리파탐">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="캘커타">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="산후안">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="산토도밍고">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="산티아고">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="자메이카">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="하바나">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="카사블랑카">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="칼비">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="칼리아리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="사사리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="안코나">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="브레멘">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="단치히">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="뷔스비">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="벵가지">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="오데사">
+    <server name="헬레네" country="Turkey" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="세바스토폴">
+    <server name="헬레네" country="Turkey" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="두알라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="베냉">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="벵겔라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="나탈">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="킬와">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="말린디">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="소코트라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="도파르">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="세이라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="제다">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="포르토벨로">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="베라크루스">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="메리다">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="마라카이보">
+    <server name="헬레네" country="Venezia" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="바이아">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="리우데자네이루">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="부에노스아이레스">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="산안토니오">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아체">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="말라카">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="팔렘방">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="자카르타">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="수라바야">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="파타니">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="로프부리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="지아딘">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="쿠칭">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="반자르마신">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="마카사르">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="룬">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="다바오">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Unknown" />
+    <server name="에이레네" country="Unknown" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="마닐라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="브루나이">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="페구">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="딜리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="잠비">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="암보이나">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="테르나테">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="발파라이소">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="코피아포">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="리마">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="람바예케">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="툼베스">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="파나마">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="사마라이">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="괌">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="카카두">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="호바트">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="왕가누이">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="과테말라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="아카풀코">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="쿠가리">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="핀자라">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="히바오아">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="하와이">
+    <server name="헬레네" country="Portugal" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="코콜라">
+    <server name="헬레네" country="Netherlands" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="샌프란시스코">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="타코마">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="맨체스터">
+    <server name="헬레네" country="England" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
+  <domain_info name="보스턴">
+    <server name="헬레네" country="Spain" />
+    <server name="폴라리스" country="Spain" />
+    <server name="에이레네" country="Spain" />
+    <server name="Unknown" country="Unknown" />
+  </domain_info>
 </domaininfo_root>

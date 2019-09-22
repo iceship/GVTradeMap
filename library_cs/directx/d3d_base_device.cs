@@ -1,7 +1,7 @@
 ﻿/*-------------------------------------------------------------------------
 
  Direct3D
- Deviceの初期化を担当する
+ Deviceの초기화を担当する
  継承して사용すること
  デバイスリセット時の処理付き
 
@@ -194,7 +194,7 @@ namespace directx
 		{
 			int	result;
 
-			// リセット가능かどうかをチェック
+			// リセット가능かどうかを체크
 			if(!m_d3d_device.CheckCooperativeLevel(out result)){
 				// リセット가능ならリセット
 				if(result == (int)ResultCode.DeviceNotReset){
@@ -212,7 +212,7 @@ namespace directx
 		 지정されたフォーマットが사용가능かどうかを得る
 		 現在のデバイスを대상に調べる
 		 통상텍스쳐작성時にこの関수で결과を得るべきではない
-		 初期化時に결과を知っておくこと
+		 초기화時に결과を知っておくこと
 		---------------------------------------------------------------------------*/
 		public bool CheckDeviceFormat(Usage usage, ResourceType resource_type, DepthFormat format)
 		{

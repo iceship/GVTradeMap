@@ -67,10 +67,10 @@ namespace Utility.KeyAssign
 			m_remove_assign_button		= remove_assign_button;
 			m_default_all_assign_button	= default_all_assign_button;
 
-			// コントロールの初期化
+			// コントロールの초기화
 			init_ctrl();
 
-			// 初期化
+			// 초기화
 			init();
 
 			// 할당ボタンの更新
@@ -79,7 +79,7 @@ namespace Utility.KeyAssign
 
 		//-------------------------------------------------------------------------
 		/// <summary>
-		/// コントロールの初期化
+		/// コントロールの초기화
 		/// </summary>
 		private void init_ctrl()
 		{
@@ -100,7 +100,7 @@ namespace Utility.KeyAssign
 				m_remove_assign_button.Click += new System.EventHandler(this.button2_Click);
 			}
 	
-			// 全て初期化ボタン
+			// 全て초기화ボタン
 			if(m_default_all_assign_button != null){
 				m_default_all_assign_button.Click += new System.EventHandler(this.button3_Click);
 			}
@@ -121,7 +121,7 @@ namespace Utility.KeyAssign
 
 		//-------------------------------------------------------------------------
 		/// <summary>
-		/// 初期化
+		/// 초기화
 		/// </summary>
 		private void init()
 		{
